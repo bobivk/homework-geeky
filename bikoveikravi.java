@@ -1,18 +1,18 @@
-//package homework;
+package Cowsandbulls;
 import java.util.Scanner;
+
 public class bikoveikravi {
 	
-	/*public static boolean krava(int a, int[] number){
-		for(int i = 0; i < 4; i++){
-			
-		}
-		return false;
-		
-	}
-	*/
 	public static void main(String[] args) {
-		int num = (int)(Math.random() * (9000)+ 1000);
-		String number = Integer.toString(num);
+		for(int a = 0; a < 20; a++){
+			char[] num = NumGenerator.generateChar();
+			for(int i = 0; i < num.length; i++){
+				System.out.print(num[i]);
+			}
+		}
+	}
+	/*	
+		//String number = Integer.toString(num);
 		Scanner s = new Scanner(System.in);
 		boolean guessed = false;
 		while(!guessed){
@@ -36,5 +36,6 @@ public class bikoveikravi {
 		}
 		if(guessed) System.out.println("Pozdravlenia, specheli!");
 	}
+	*/
 
 }
